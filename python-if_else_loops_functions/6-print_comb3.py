@@ -5,5 +5,5 @@ for x in range(10):
             continue
         elif i == x:
             continue
-        print("{}{}".format(x, i), end=", " if x != 9 else "")
+        print("{}{}".format(x, i), end=", " if x != 8 and i != 10 else "")
 print()
