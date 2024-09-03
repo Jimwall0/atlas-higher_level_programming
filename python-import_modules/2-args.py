@@ -8,7 +8,7 @@ def main():
         print(".")
         exit
     for x in range(1, total):
-        print("{}:{}".format(x, sys.argv[x]))
+        print("{}: {}".format(x, sys.argv[x]))
 
 if __name__ == "__main__":
     main()
