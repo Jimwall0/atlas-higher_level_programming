@@ -5,12 +5,12 @@ import sys
 def main():
     total = len(sys.argv)
     if total - 1 == 0:
-        print("{} arguement.".format(total))
+        print("{} argument.".format(total))
         exit
     elif total - 1 == 1:
-        print("{} arguement:".format(total - 1))
+        print("{} argument:".format(total - 1))
     else:
-        print("{} arguements:".format(total - 1))
+        print("{} arguments:".format(total - 1))
     for x in range(1, total):
         print("{}: {}".format(x, sys.argv[x]))
 
