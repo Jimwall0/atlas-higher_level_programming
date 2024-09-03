@@ -5,7 +5,7 @@ import sys
 def main():
     total = len(sys.argv)
     if total - 1 == 0:
-        print(".")
+        print("{} arguement.".format(total))
         exit
     elif total - 1 == 1:
         print("{} arguement:".format(total - 1))
