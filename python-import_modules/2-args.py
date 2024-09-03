@@ -5,7 +5,7 @@ import sys
 def main():
     total = len(sys.argv)
     if total - 1 == 0:
-        print("{} argument.".format(total))
+        print("{} arguments.".format(0))
         exit
     elif total - 1 == 1:
         print("{} argument:".format(total - 1))
