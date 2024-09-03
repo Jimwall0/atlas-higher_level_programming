@@ -8,9 +8,9 @@ def main():
         print(".")
         exit
     elif total - 1 == 1:
-        print("{} arguement".format(total - 1))
+        print("{} arguement:".format(total - 1))
     else:
-        print("{} arguements".format(total - 1))
+        print("{} arguements:".format(total - 1))
     for x in range(1, total):
         print("{}: {}".format(x, sys.argv[x]))
 
