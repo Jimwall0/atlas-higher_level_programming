@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+import sys
+
+
 def main():
-    import sys
     total = len(sys.argv)
     sum = 0
     for n in range (1, total):
