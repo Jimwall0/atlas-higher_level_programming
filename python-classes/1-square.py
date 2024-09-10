@@ -8,5 +8,5 @@ class Square:
     """
     This is a square with a size set
     """
-    def __init__(self, _Square__size = 0):
+    def __init__(self, _Square__size=0):
         self._Square__size = _Square__size
