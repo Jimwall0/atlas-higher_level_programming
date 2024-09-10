@@ -5,6 +5,8 @@ Write a class Square that defines a square by: (based on 0-square.py)
 
 
 class Square:
-    # Square with a size
-    def __init__(self, size):
+    """
+    This is a square with a size set
+    """
+    def __init__(self, size = 0):
         self.size = size
