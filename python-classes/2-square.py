@@ -5,7 +5,10 @@ Write a class Square that defines a square by: (based on 1-square.py)
 
 
 class Square:
-    def __init__(self, _Square__size = 0):
+    """
+    A sqaure class with errors
+    """
+    def __init__(self, _Square__size=0):
         self._Square__size = _Square__size
         if type(_Square__size) != int:
             raise TypeError("size must be an integer")
