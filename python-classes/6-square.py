@@ -14,12 +14,16 @@ class Square:
             raise TypeError("size must be an integer")
         if _Square__size < 0:
             raise ValueError("size must be >= 0")
-        if not isinstance(_Square__position, tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if all(x is None for x in _Square__position):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if _Square__position[0] < 0 or _Square__position[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
+        if isinstance(_Square__position, tuple):
+            TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(_Square__position[0], int):
+            TypeError("position must be a tuple of 2 positive integers")
+        if _Square__position[0] < 0:
+            TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(_Square__position[1], int):
+            TypeError("position must be a tuple of 2 positive integers")
+        if _Square__position[1] < 0:
+            TypeError("position must be a tuple of 2 positive integers")
         self._Square__position = _Square__position
 
     def area(self):
@@ -51,8 +55,14 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.position = value
+        if isinstance(value, tuple):
+            TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[0], int):
+            TypeError("position must be a tuple of 2 positive integers")
+        if value[0] < 0:
+            TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[1], int):
+            TypeError("position must be a tuple of 2 positive integers")
+        if value[1] < 0:
+            TypeError("position must be a tuple of 2 positive integers")
+        self._Square__position = value
