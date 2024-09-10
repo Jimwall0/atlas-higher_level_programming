@@ -16,6 +16,8 @@ class Square:
             raise ValueError("size must be >= 0")
         if not isinstance(_Square__position, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
+        if all(x is None for x in _Square__position):
+            raise TypeError("position must be a tuple of 2 positive integers")
         if _Square__position[0] < 0 or _Square__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self._Square__position = _Square__position
