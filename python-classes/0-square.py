@@ -5,7 +5,5 @@ This is an empty class for square
 
 
 class Square:
-    """
-    Does nothing
-    """
+    #Does nothing
     pass
