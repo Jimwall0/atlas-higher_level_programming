@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+This is an empty class for square
+"""
+
+
 class Square:
+    """
+    Does nothing
+    """
     pass
-
-
-if __name__ == "__main__":
-    Square
