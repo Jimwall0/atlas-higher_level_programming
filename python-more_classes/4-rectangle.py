@@ -62,6 +62,7 @@ class Rectangle:
             if not colomn == self._Rectangle__height - 1:
                 string += "\n"
         return string
-    
+
     def __repr__(self):
-        return f"Rectangle({self._Rectangle__width}, {self._Rectangle__height})"
+        return f"Rectangle({self._Rectangle__width}, \
+            {self._Rectangle__height})"
