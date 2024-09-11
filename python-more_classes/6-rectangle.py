@@ -9,7 +9,7 @@ class Rectangle:
     This is the class for rectangle
     """
 
-    i_conumber_of_instancesunt = 0
+    number_of_instances = 0
 
     def __init__(self, _Rectangle__width=0, _Rectangle__height=0):
         if not isinstance(_Rectangle__width, int):
@@ -22,7 +22,7 @@ class Rectangle:
         elif _Rectangle__height < 0:
             raise ValueError("height must be >= 0")
         self._Rectangle__height = _Rectangle__height
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -73,4 +73,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-        number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
