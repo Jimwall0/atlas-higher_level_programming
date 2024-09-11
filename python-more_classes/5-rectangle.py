@@ -67,8 +67,5 @@ class Rectangle:
         return f"Rectangle({self._Rectangle__width}, "\
             f"{self._Rectangle__height})"
 
-    def __enter__(self):
-        pass
-    def __exit__(self, exc_type, exc_value, traceback):
+    def __del__(self):
         print("Bye rectangle...")
-        return False
