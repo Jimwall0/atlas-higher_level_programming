@@ -48,4 +48,4 @@ class Rectangle:
         return self._Rectangle__height * self._Rectangle__width
 
     def perimeter(self):
-        return (self._Rectangle__width * 2) + (self._Rectangle__height * 2)
+        return 2(self._Rectangle__height + self._Rectangle__width)
