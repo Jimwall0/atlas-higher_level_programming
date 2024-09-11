@@ -63,7 +63,7 @@ class Rectangle:
         string = ""
         for colomn in range(self._Rectangle__height):
             for row in range(self._Rectangle__width):
-                string += Rectangle.print_symbol
+                string += f"{self.print_symbol}"
             if not colomn == self._Rectangle__height - 1:
                 string += "\n"
         return string
