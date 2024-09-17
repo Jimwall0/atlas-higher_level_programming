@@ -7,4 +7,4 @@ def lookup(obj):
     This is the lookup function
     that returns the methods and arguements
     """
-    return vars(obj)
+    return dir(obj)
