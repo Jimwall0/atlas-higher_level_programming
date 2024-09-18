@@ -9,10 +9,10 @@ save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
 load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 
+my_list = []
 if len(sys.argv) < 2:
     print("Less then 2 arg")
-    exit
-my_list = []
-for size in range(len(sys.argv), 1):
+    exit()
+for size in range(1, len(sys.argv)):
     my_list.append(sys.argv[size])
-print(save_to_json_file(my_list, "add_item.json"))
+save_to_json_file(my_list, "add_item.json")
