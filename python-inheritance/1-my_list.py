@@ -8,9 +8,6 @@ class MyList(list):
     """
     This is a class containing function and list attributes
     """
-    def __init__(self):
-        super().__init__()
-
     def print_sorted(self):
 
         """
