@@ -2,7 +2,7 @@
 """
 file for square class
 """
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -51,7 +51,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        return self._height
+        return self._y
 
     @y.setter
     def y(self, value):
