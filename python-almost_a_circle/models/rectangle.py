@@ -6,6 +6,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """
+    This is a Rectangle class inheriting from the base class
+    """
     def __init__(self, _width, _height, _x=0, _y=0, id=None):
         super().__init__(id)
         self._width = _width
