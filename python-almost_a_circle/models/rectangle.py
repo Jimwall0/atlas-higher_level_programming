@@ -9,16 +9,16 @@ class Rectangle(Base):
     """
     This is a Rectangle class inheriting from the base class
     """
-    def __init__(self, _width, _height, _x=0, _y=0, id=None):
+    def __init__(self, _Rectangle__width, _Rectangle__height, _Rectangle__x=0, _Rectangle__y=0, id=None):
         super().__init__(id)
-        self._width = _width
-        self._height = _height
-        self._x = _x
-        self._y = _y
+        self._Rectangle__width = _Rectangle__width
+        self._Rectangle__height = _Rectangle__height
+        self._Rectangle__x =_Rectangle__x
+        self._Rectangle__y = _Rectangle__y
 
     @property
     def width(self):
-        return self._width
+        return self._Rectangle__width
 
     @width.setter
     def width(self, value):
@@ -26,11 +26,11 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        self._width = value
+        self._Rectangle__width = value
 
     @property
     def height(self):
-        return self._height
+        return self._Rectangle__height
 
     @height.setter
     def height(self, value):
@@ -38,11 +38,11 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        self._height = value
+        self._Rectangle__height = value
 
     @property
     def x(self):
-        return self._x
+        return self._Rectangle__x
 
     @x.setter
     def height(self, value):
@@ -50,11 +50,11 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        self._x = value
+        self._Rectangle__x = value
 
     @property
     def y(self):
-        return self._y
+        return self._Rectangle__y
 
     @y.setter
     def y(self, value):
@@ -62,4 +62,4 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        self._y = value
+        self._Rectangle__y = value
