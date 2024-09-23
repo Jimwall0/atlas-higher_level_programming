@@ -2,6 +2,7 @@
 """
 Write a class MyList that inherits from list
 """
+import doctest
 
 
 class MyList(list):
@@ -30,3 +31,5 @@ class MyList(list):
         temp = self.copy()
         temp.sort()
         print(temp)
+
+doctest.testmod()
