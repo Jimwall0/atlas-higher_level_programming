@@ -2,7 +2,6 @@
 """
 Write a class MyList that inherits from list
 """
-import doctest
 
 
 class MyList(list):
@@ -20,16 +19,7 @@ class MyList(list):
 
         """
         This prints a sorted list
-
-        Example:
-
-        >>> my_list = MyList()
-        >>> my_list.extend([3, 1, 4, 1, 5, 9, 2, 6])
-        >>> my_list.print_sorted()
-        [1, 1, 2, 3, 4, 5, 6, 9]
         """
         temp = self.copy()
         temp.sort()
         print(temp)
-
-doctest.testmod()

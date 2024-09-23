@@ -1,0 +1,6 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> a = 1
+>>> b = 2
+>>> c = add_integer(a, b)
+>>> print(c)
+3
