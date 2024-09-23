@@ -20,7 +20,7 @@ class Rectangle(Base):
         if not isinstance(_Rectangle__height, int):
             raise TypeError("height must be an integer")
         elif _Rectangle__height <= 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError("height must be > 0")
         self._Rectangle__height = _Rectangle__height
         if not isinstance(_Rectangle__x, int):
             raise TypeError("x must be an integer")
