@@ -9,11 +9,12 @@ class Rectangle(Base):
     """
     This is a Rectangle class inheriting from the base class
     """
-    def __init__(self, _Rectangle__width, _Rectangle__height, _Rectangle__x=0, _Rectangle__y=0, id=None):
+    def __init__(self, _Rectangle__width, _Rectangle__height, +
+                 _Rectangle__x=0, _Rectangle__y=0, id=None):
         super().__init__(id)
         self._Rectangle__width = _Rectangle__width
         self._Rectangle__height = _Rectangle__height
-        self._Rectangle__x =_Rectangle__x
+        self._Rectangle__x = _Rectangle__x
         self._Rectangle__y = _Rectangle__y
 
     @property
@@ -35,9 +36,9 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         self._Rectangle__height = value
 
     @property
@@ -47,9 +48,9 @@ class Rectangle(Base):
     @x.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("x must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("x must be >= 0")
         self._Rectangle__x = value
 
     @property
@@ -59,7 +60,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("y must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("y must be >= 0")
         self._Rectangle__y = value
