@@ -9,7 +9,7 @@ class Rectangle(Base):
     """
     This is a Rectangle class inheriting from the base class
     """
-    def __init__(self, _Rectangle__width, _Rectangle__height, \
+    def __init__(self, _Rectangle__width, _Rectangle__height,
                  _Rectangle__x=0, _Rectangle__y=0, id=None):
         super().__init__(id)
         self._Rectangle__width = _Rectangle__width
