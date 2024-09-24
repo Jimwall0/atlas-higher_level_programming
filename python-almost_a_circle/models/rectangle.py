@@ -109,17 +109,28 @@ class Rectangle(Base):
             f" - {self._Rectangle__width}/{self._Rectangle__height}"
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         updates the values inside arguements
         """
         if len(args) > 0:
             self.id = args[0]
-        if len(args) > 1:
-            self._Rectangle__width = args[1]
-        if len(args) > 2:
-            self._Rectangle__height = args[2]
-        if len(args) > 3:
-            self._Rectangle__x = args[3]
-        if len(args) > 4:
-            self._Rectangle__y = args[4]
+            if len(args) > 1:
+                self._Rectangle__width = args[1]
+            if len(args) > 2:
+                self._Rectangle__height = args[2]
+            if len(args) > 3:
+                self._Rectangle__x = args[3]
+            if len(args) > 4:
+                self._Rectangle__y = args[4]
+        else:
+            if "id" in kwargs and kwargs["id"] is not None:
+                self.id = kwargs["id"]
+            if "width" in kwargs and kwargs["width"] is not None:
+                self._Rectangle__width = kwargs["width"]
+            if "height" in kwargs and kwargs["height"] is not None:
+                self._Rectangle__height = kwargs["height"]
+            if "x" in kwargs and kwargs["x"] is not None:
+                self._Rectangle__x = kwargs["x"]
+            if "y" in kwargs and kwargs["y"] is not None:
+                self._Rectangle__y = kwargs["y"]
