@@ -87,3 +87,12 @@ class Rectangle(Base):
         rectangle
         """
         return self._Rectangle__height * self._Rectangle__width
+
+    def display(self):
+        """
+        Prints a visual for the rectangle
+        """
+        for x in range(self._Rectangle__height):
+            for y in range(self._Rectangle__width):
+                print("x", end="")
+            print("")
