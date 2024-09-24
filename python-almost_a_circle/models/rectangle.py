@@ -94,5 +94,5 @@ class Rectangle(Base):
         """
         for x in range(self._Rectangle__height):
             for y in range(self._Rectangle__width):
-                print("x", end="")
+                print("#", end="")
             print("")
