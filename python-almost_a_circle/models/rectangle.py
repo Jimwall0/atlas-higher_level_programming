@@ -136,6 +136,9 @@ class Rectangle(Base):
                 self._Rectangle__y = kwargs["y"]
 
     def to_dictionary(self):
+        """
+        converts class to a dictionary
+        """
         tempdict = {
             "x": self._Rectangle__x,
             "y": self._Rectangle__y,
