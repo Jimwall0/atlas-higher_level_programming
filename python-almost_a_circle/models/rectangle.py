@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-file for square class
+file for rectangle class
 """
 from models.base import Base
 
