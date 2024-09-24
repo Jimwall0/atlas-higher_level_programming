@@ -92,8 +92,14 @@ class Rectangle(Base):
         """
         Prints a visual for the rectangle
         """
-        for x in range(self._Rectangle__height):
-            for y in range(self._Rectangle__width):
+        for y in range(self._Rectangle__height):
+            if y == 0:
+                for _ in range(self.y):
+                    print("")
+            for x in range(self._Rectangle__width):
+                if x == 0:
+                    for _ in range(self.x):
+                        print(" ", end="")
                 print("#", end="")
             print("")
 
