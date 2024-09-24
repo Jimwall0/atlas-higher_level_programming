@@ -134,3 +134,13 @@ class Rectangle(Base):
                 self._Rectangle__x = kwargs["x"]
             if "y" in kwargs and kwargs["y"] is not None:
                 self._Rectangle__y = kwargs["y"]
+
+    def to_dictionary(self):
+        tempdict = {
+            "x": self._Rectangle__x,
+            "y": self._Rectangle__y,
+            "id": self.id,
+            "height": self._Rectangle__height,
+            "width": self._Rectangle__width,
+        }
+        return tempdict
