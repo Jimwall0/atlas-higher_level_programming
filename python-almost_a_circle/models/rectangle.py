@@ -108,3 +108,18 @@ class Rectangle(Base):
             f"[Rectangle] ({self.id}) {self.x}/{self.y}"
             f" - {self._Rectangle__width}/{self._Rectangle__height}"
         )
+
+    def update(self, *args):
+        """
+        updates the values inside arguements
+        """
+        if len(args) > 0:
+            self.id = args[0]
+        if len(args) > 1:
+            self._Rectangle__width = args[1]
+        if len(args) > 2:
+            self._Rectangle__height = args[2]
+        if len(args) > 3:
+            self._Rectangle__x = args[3]
+        if len(args) > 4:
+            self._Rectangle__y = args[4]
