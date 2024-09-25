@@ -47,6 +47,6 @@ class Base:
         """
         makes default instance with future update
         """
-        copy = cls(10, 10, 10)
+        copy = cls(10, 10)
         copy.update(**dictionary)
         return copy
