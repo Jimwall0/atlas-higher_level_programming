@@ -41,3 +41,12 @@ class Base:
         if json_string == 0 or json_string is None:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        makes default instance with future update
+        """
+        copy = cls(10, 10)
+        copy.update(**dictionary)
+        return copy
