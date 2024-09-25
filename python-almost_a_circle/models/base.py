@@ -33,3 +33,8 @@ class Base:
             list_objs = [item.to_dictionary() for item in list_objs]
         with open(filename, "w") as file:
             file.write(cls.to_json_string(list_objs))
+
+    def from_json_string(json_string):
+        if json_string == 0 or json_string is None:
+            return []
+        return json.loads(json_string)
