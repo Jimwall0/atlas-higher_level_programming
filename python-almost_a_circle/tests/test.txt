@@ -1,5 +1,4 @@
 >>> from models.base import Base
 >>> b1 = Base()
->>> print(b1)
-<models.base.Base object at 0x7f55c420b520>
-
+>>> print(b1.id)
+1
