@@ -50,3 +50,9 @@ class Base:
         copy = cls(10, 10)
         copy.update(**dictionary)
         return copy
+
+    @classmethod
+    def load_from_file(cls):
+        filename = f"{cls.__name__}.json"
+        with open(filename, "r") as file:
+
