@@ -1,7 +1,7 @@
 #!/usr/bin/node
 function second (array) {
-  let largest = 1;
-  let second = 1;
+  let largest = 0;
+  let second = 0;
   for (const x of array) {
     if (x > largest) {
       second = largest;
