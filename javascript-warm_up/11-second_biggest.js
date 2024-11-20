@@ -15,7 +15,7 @@ function second (array) {
 const argv = process.argv.slice(2).map(Number);
 const len = argv.len;
 if (len < 2) {
-  console.log(1);
+  console.log(0);
 } else {
   console.log(second(argv));
 }
