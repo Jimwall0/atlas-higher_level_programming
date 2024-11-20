@@ -5,4 +5,8 @@ function factorial (n) {
   }
   return n * factorial(n - 1);
 }
-console.log(factorial(process.argv[2]));
+if (process.argv[2] === undefined) {
+  console.log(1);
+} else {
+  console.log(factorial(process.argv[2]));
+}
