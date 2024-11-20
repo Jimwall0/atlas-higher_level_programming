@@ -1,21 +1,13 @@
 #!/usr/bin/node
-
 const Square = require('./5-square');
 
 class Square2 extends Square {
-  constructor (size) {
-    super(size);
-  }
-
   charPrint (c) {
+    const char = c === undefined ? 'X' : c;
     for (let row = 0; row < this.size; row++) {
       let string = '';
       for (let column = 0; column < this.size; column++) {
-        if (c) {
-          string += c;
-        } else {
-          string += 'X';
-        }
+        string += char;
       }
       console.log(string);
     }
