@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const Square = require('./5-square');
+const Square1 = require('./5-square');
 
-class Square2 extends Square {
+class Square extends Square1 {
   charPrint (c) {
     const char = c === undefined ? 'X' : c;
     for (let row = 0; row < this.size; row++) {
@@ -13,4 +13,5 @@ class Square2 extends Square {
     }
   }
 }
-module.exports = Square2;
+
+module.exports = { Square };
