@@ -9,5 +9,5 @@ if (Number.isInteger(square)) {
     console.log(box);
   }
 } else {
-    console.log('Missing size')
+  console.log('Missing size');
 }
