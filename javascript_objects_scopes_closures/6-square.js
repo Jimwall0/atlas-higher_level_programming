@@ -1,8 +1,12 @@
 #!/usr/bin/node
 
-const copy = require('./5-square');
+const Square = require('./5-square');
 
-class Square extends copy {
+class Square2 extends Square {
+  constructor (size) {
+    super(size);
+  }
+
   charPrint (c) {
     for (let row = 0; row < this.size; row++) {
       let string = '';
@@ -17,4 +21,4 @@ class Square extends copy {
     }
   }
 }
-module.exports = Square;
+module.exports = Square2;
