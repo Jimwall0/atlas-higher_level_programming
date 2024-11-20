@@ -8,8 +8,8 @@ class Rectangle {
   }
 
   print () {
-    let string = '';
     for (let row = 0; row < this.height; row++) {
+      let string = '';
       for (let column = 0; column < this.width; column++) {
         string += 'X';
       }
