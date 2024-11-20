@@ -12,9 +12,9 @@ function second (array) {
   }
   return second;
 }
-const len = process.argv.len;
-const argv = process.argv;
-if (len < 4) {
+const argv = process.argv.slice(2).map(Number);
+const len = argv.len;
+if (len < 2) {
   console.log(1);
 } else {
   console.log(second(argv));
