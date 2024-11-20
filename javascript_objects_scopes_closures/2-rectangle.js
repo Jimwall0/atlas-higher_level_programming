@@ -8,7 +8,7 @@ class Rectangle {
     }
     if (h < 1) {
       this.height = {};
-    } eles {
+    } else {
       this.height = h;
     }
   }
