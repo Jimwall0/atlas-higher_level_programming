@@ -4,7 +4,7 @@ if (Number.isInteger(square)) {
   for (let h = 0; h < square; h++) {
     let box = '';
     for (let w = 0; w < square; w++) {
-      box += 'x';
+      box += 'X';
     }
     console.log(box);
   }
