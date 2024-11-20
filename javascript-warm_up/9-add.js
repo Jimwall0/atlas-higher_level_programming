@@ -4,9 +4,11 @@ function add (a, b) {
     if (Number.isInteger(b)) {
       const total = a + b;
       console.log(total);
+    } else {
+      console.log('NaN');
     }
   } else {
-    console.log('Nan');
+    console.log('NaN');
   }
 }
 
