@@ -1,4 +1,7 @@
 #!/usr/bin/node
-const Rectangle = class Rectangle {
-
+class Rectangle {
+  constructor(height, weight) {
+    this.height = height;
+    this.weight = weight;
+  }
 }
