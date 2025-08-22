@@ -39,11 +39,9 @@ This repository is a personal collection of projects and exercises I've worked o
 ├── python-object_relational_mapping/
 ├── python-test_driven_development/
 └── README.md
+```
 
-
----
-
-## 🧠 What's Inside
+##  What's Inside
 
 | Category                   | Description |
 |---------------------------|-------------|
@@ -69,12 +67,12 @@ This repository is a personal collection of projects and exercises I've worked o
 ```bash
 cd python-hello_world
 python3 example.py
-
+```
 #### JavaScript
 ```bash
 cd javascript-warm_up
 node example.js
-
+```
 ### Goals
 
 - Strengthen foundational programming skills
