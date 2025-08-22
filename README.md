@@ -9,7 +9,6 @@ This repository is a personal collection of projects and exercises I've worked o
 - **Python** — ~86.7% of the content  
 - **JavaScript** — ~13.2% of the content  
 - **Shell** — ~0.1% of the content  
-:contentReference[oaicite:1]{index=1}
 
 ---
 
